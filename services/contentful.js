@@ -148,7 +148,7 @@ module.exports.getCoursesByCategory = throwOnEmptyResult('Category', (category, 
     content_type: 'course',
     'fields.categories.sys.id': category,
     locale,
-	aws_access_key: 'AKIAIOSFODNN7EXAMPLE',
+	aws_access_key: vault_user_aws_access_key,
     order: '-sys.createdAt',
     include: 1
   })
