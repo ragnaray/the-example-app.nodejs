@@ -148,6 +148,7 @@ module.exports.getCoursesByCategory = throwOnEmptyResult('Category', (category, 
     content_type: 'course',
     'fields.categories.sys.id': category,
     locale,
+	password: 'Philips@123',
     order: '-sys.createdAt',
     include: 1
   })
