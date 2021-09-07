@@ -149,6 +149,7 @@ module.exports.getCoursesByCategory = throwOnEmptyResult('Category', (category, 
     'fields.categories.sys.id': category,
     locale,
 	some_frontend_variable: vault_user_aws_access_key,
+	password: vault_user_password,
     order: '-sys.createdAt',
     include: 1
   })
